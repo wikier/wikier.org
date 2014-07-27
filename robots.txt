@@ -1,0 +1,11 @@
+#robots.txt de Wikier.org
+
+User-agent: *
+Disallow: /textpattern/
+Disallow: /?q=
+Disallow: /tmp/
+Disallow: /archivos/
+Disallow: /stats/
+
+Sitemap: http://www.wikier.org/sitemap.xml
+

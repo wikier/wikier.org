@@ -1,0 +1,6 @@
+
+/* FeedBurner BuzzBoost */
+div.feedburnerFeedBlock ul { list-style:circle outside; margin-left: 1.6em; }
+div.feedburnerFeedBlock ul li { margin: 0 0 5px 18px; }
+div.feedburnerFeedBlock div#creditfooter { display: none; }
+
