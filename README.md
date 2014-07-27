@@ -1,4 +1,1 @@
-wikier.org
-==========
-
-wikier.org source code
+[wikier.org](http://www.wikier.org) source code
