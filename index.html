@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html	xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+		xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+		xmlns:dc="http://purl.org/dc/elements/1.1/"
+		xmlns:dct="http://purl.org/dc/terms/"
+		xmlns:foaf="http://xmlns.com/foaf/0.1/"
+		xmlns:sioc="http://rdfs.org/sioc/ns#"
+		xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+		xml:lang="en"
+>
+
+  <head profile="http://www.w3.org/2003/g/data-view">
+    <title>Wikier.org - Sergio Fernández</title>
+    <meta http-equiv="content-type" content="text/xhtml+xml; charset=utf-8" />
+    <link rel="transformation" href="http://www-sop.inria.fr/acacia/soft/RDFa2RDFXML.xsl"/>
+    <link rel="stylesheet" type="text/css" href="resources/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="alternate" type="application/rss+xml" title="RSS Blog Wikier.org" href="/blog/rss" />
+    <link rel="meta" type="application/rdf+xml" title="FOAF" href="/foaf.rdf#wikier" />
+    <link rel="meta" type="application/rdf+xml" title="SIOC" href="http://www.talkdigger.com/sioc/www.wikier.org" />
+    <link rel="openid.server" href="http://openid.blogs.es/index.php/serve" />
+    <link rel="openid.delegate" href="http://openid.blogs.es/wikier" />
+    <meta name="ICBM" content="43.4392, -5.7744" />
+    <meta name="DC.title" content="Wikier.org" />
+    <meta name="DC.description" content="Página personal de Sergio Fernández" />
+    <script type="text/javascript" src="resources/scripts.js"></script>
+  </head>
+
+  <body>
+
+    <p><a href="#content" class="accessibility">go to the content</a></p>
+
+	<h1 id="head">
+      <a href="/" title="go to Wikier.org"><img src="resources/images/wikier.org.png" width="370" height="100" alt="Wikier.org" /></a>
+    </h1>
+
+    <ul id="topmenu">
+      <li>
+        <a href="/blog" title="blog" rel="sioc:Forum">
+          <img src="resources/images/blog_over.png" id="topmenu-blog" width="64" height="64" alt="blog" />
+          <!-- Blog -->
+        </a>
+      </li>
+      <li>
+        <a href="/work" title="work stuff">
+          <img src="resources/images/work_over.png" id="topmenu-work" width="64" height="64" alt="work" />
+          <!-- Work -->
+        </a>
+      </li>
+      <li>
+        <a href="http://flickr.com/photos/wikier/" title="photos">
+          <img src="resources/images/photos_over.png" id="topmenu-photos" width="64" height="64" alt="blog" />
+          <!-- Photos -->
+        </a>
+      </li>
+      <li>
+        <a href="/contact" title="contact me">
+          <img src="resources/images/contact_over.png" id="topmenu-contact" width="64" height="64" alt="contact" />
+          <!-- Contact -->
+        </a>
+      </li>
+    </ul>
+
+    <ul id="sidebar">
+
+      <li>
+        <h2>Menu</h2>
+        <ul id="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog" rel="sioc:Forum">Blog</a></li>
+          <li><a href="/work">Work</a></li>
+          <li><a href="/wiki/">Wiki</a></li>
+          <li><a href="http://flickr.com/photos/wikier/">Photos</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <h2>
+          <a href="/blog/rss"><img src="resources/images/rss.png" alt="RSS" /></a>
+          Blog entries
+        </h2>
+        <ul>
+          <li><a href="#" rel="sioc:Post">El blog como herramienta para aprender un idioma</a></li>
+          <li><a href="#" rel="sioc:Post">N810</a></li>
+          <li><a href="#" rel="sioc:Post">La herencia de la web semántica</a></li>
+          <li><a href="#" rel="sioc:Post">Desarrollo libre de proyectos</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <h2>Meta</h2>
+        <ul>
+          <li>FIXME</li>
+          <li>FIXME</li>
+          <li>FIXME</li>
+        </ul>
+      </li>
+
+    </ul>
+
+    <div id="content">
+
+      <p>foo</p>
+
+      <p>bar</p>
+
+      <ol id="blog" instanceof="sioc:Forum">
+
+        <li instanceof="sioc:Post">
+          <div class="date" property="dct:created"> 
+            <span class="day">28</span>
+            <span class="month"><abbr title="octubre">oct</abbr></span>
+            <span class="year">2007</span>
+          </div>
+          <h3 property="dc:title"><a href="#">some title</a></h3>
+          <h4 class="postmeta">
+            escrito por 
+            <a href="http://www.wikier.org" rel="sioc:has_creator"><span property="sioc:name">Sergio Fernández</span></a>
+             a las 20<abbr title="horas">h</abbr>57
+          </h4>
+          <div property="sioc:content">
+            <p>
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+            </p>
+            <p>
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+            </p>
+
+            <ul class="postfeedback">
+              <li><a href="#" title="Comentarios a «El blog como herramienta para aprender un&#160;idioma»">comentarios</a>[3]</li>
+              <li><a href="#" title="Enlace permanente a «El blog como herramienta para aprender un&#160;idioma»">permalink</a></li>
+              <li>se lee en 0,86 minutos</li>
+              <li class="last"><a href="#head" title="volver arriba">arriba</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li instanceof="sioc:Post">
+          <div class="date" property="dct:created"> 
+            <span class="day">28</span>
+            <span class="month"><abbr title="octubre">oct</abbr></span>
+            <span class="year">2007</span>
+          </div>
+          <h3 property="dc:title"><a href="#">some title</a></h3>
+          <h4 class="postmeta">
+            escrito por 
+            <a href="http://www.wikier.org" rel="sioc:has_creator"><span property="sioc:name">Sergio Fernández</span></a>
+             a las 20<abbr title="horas">h</abbr>57
+          </h4>
+          <div property="sioc:content">
+            <p>
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+            </p>
+            <p>
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+            </p>
+          </div>
+        </li>
+
+        <li instanceof="sioc:Post">
+          <div class="date" property="dct:created"> 
+            <span class="day">28</span>
+            <span class="month"><abbr title="octubre">oct</abbr></span>
+            <span class="year">2007</span>
+          </div>
+          <h3 property="dc:title"><a href="#">some title</a></h3>
+          <h4>
+            escrito por 
+            <a href="http://www.wikier.org" rel="sioc:has_creator"><span property="sioc:name">Sergio Fernández</span></a>
+             a las 20<abbr title="horas">h</abbr>57
+          </h4>
+          <div property="sioc:content">
+            <p>
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+            </p>
+            <p>
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+            </p>
+          </div>
+        </li>
+
+        <li instanceof="sioc:Post">
+          <div class="date" property="dct:created"> 
+            <span class="day">28</span>
+            <span class="month"><abbr title="octubre">oct</abbr></span>
+            <span class="year">2007</span>
+          </div>
+          <h3 property="dc:title"><a href="#">some title</a></h3>
+          <h4 class="postmeta">
+            escrito por 
+            <a href="http://www.wikier.org" rel="sioc:has_creator"><span property="sioc:name">Sergio Fernández</span></a>
+             a las 20<abbr title="horas">h</abbr>57
+          </h4>
+          <div property="sioc:content">
+            <p>
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+            </p>
+            <p>
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+              foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar
+            </p>
+          </div>
+        </li>
+
+      </ol>
+
+    </div>
+
+    <div id="foot">
+      <p>Powered by <a href="http://textpattern.com/">Textpattern</a></p>
+      <ul>
+        <li>
+          1999 - 2007
+        </li>
+        <li>
+          <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative CommonsAttribution-Share Alike 3.0"><img src="resources/images/cc.png" width="17" height="17" alt="Creative Commons" /></a>
+        </li>
+        <li>
+          <a href="http://www.wikier.org/">Sergio Fernández</a>
+        </li>
+      </ul>
+    </div>
+
+  </body>
+
+</html>
