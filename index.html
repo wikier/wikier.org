@@ -26,7 +26,7 @@
         <nav class="column_4 text right color secondary">
           <a href="http://twitter.com/wikier" title="twitter" class="icon twitter"></a>
           <a href="http://www.wikier.org/foaf#wikier" title="foaf" class="icon cube"></a>
-          <a href="mailto:sergio@wikier.org" title="email" class="icon paper-plane"></a>
+          <a href="mailto:sergio@wikier.org" title="email" class="icon paper-plane" itemprop="email"></a>
         </nav>
       </div>
     </header>
@@ -39,9 +39,9 @@
         <div class="column_6 text center color white">
           <p class="triangle-border left" style="text-align: left;" itemprop="description">
             My name is <a href="http://www.wikier.org" itemprop="name">Sergio Fernández</a> 
-            (<abbr title="also known as">aka</abbr> <em>willy</em>/<em>wikier</em>). 
-            I'm a Spanish software engineer, currently living in Salzburg
-            (Austria), advocate of open technologies and thinkings. 
+            (<abbr title="also known as">aka</abbr> <em itemprop="nickname">wikier</em>/<em>willy</em>).
+            I'm a Spanish software engineer, currently living in <span itemprop="locality">Salzburg</span>
+            ( <span itemprop="region">Austria</span>), advocate of open technologies and ways of thinking.
             <br/><br/>
             Welcome to my personal web page! 
           </p>
@@ -63,8 +63,9 @@
             scientifict publications and present that work in conference, really my 
             goal has always been to bring the technology a step further. Now I'm
             trying to bring the results to the market as co-founder of 
-            <a href="http://redlink.co">RedLink</a>, an innovative Austrian startup 
-            in the Linked Data and Semantic Technologies space.
+            <a href="http://redlink.co" itemprop="affiliation">Redlink</a>, an
+            innovative Austrian startup in the Linked Data and Semantic Technologies
+            space.
           </p>
           <p>
             I've worked at some of the finest applied research institutes in Europe: 
