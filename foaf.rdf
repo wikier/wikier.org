@@ -4,6 +4,7 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:schema="http://schema.org/"
     xmlns:doap="http://usefulinc.com/ns/doap#"
     xmlns:sioc="http://rdfs.org/sioc/ns#"
     xmlns:sioct="http://rdfs.org/sioc/types#"
@@ -37,6 +38,7 @@
   </foaf:Document>
 
   <foaf:Person rdf:about="http://www.wikier.org/foaf#wikier">
+    <rdf:type rdf:resource="http://schema.org/Person" />
     <foaf:name xml:lang="es">Sergio Fernández</foaf:name>
     <foaf:title>Mr</foaf:title>
     <foaf:firstName xml:lang="es">Sergio</foaf:firstName>
