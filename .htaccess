@@ -1,0 +1,44 @@
+#DirectoryIndex index.php index.html
+
+#Options +FollowSymLinks
+#Options -Indexes
+
+RewriteEngine On
+
+RewriteRule ^foaf$ /foaf.rdf [L,QSA]
+RewriteRule ^archivos/(.*)$ /stuff/$1 [R=301,L,QSA]
+RewriteRule ^files/(.*)$ /stuff/$1 [R=301,L,QSA]
+#RewriteRule ^wiki/?(.*)$ /mediawiki/index.php?title=$1 [L,QSA]
+RewriteRule ^bio$ / [R=301]
+RewriteRule ^work$ / [R=301]
+RewriteRule ^contact$ / [R=301]
+RewriteRule ^wiki$ / [R=301]
+RewriteRule ^wiki/$ / [R=301]
+
+RewriteCond %{HTTP_ACCEPT} application/rdf\+xml
+RewriteCond %{REQUEST_URI} !^/foaf.rdf
+RewriteCond %{REQUEST_URI} !^/wiki/*
+RewriteCond %{REQUEST_URI} !^/stuff/*
+RewriteRule ^(.*)$ http://www.w3.org/2007/08/pyRdfa/extract?uri=http://www.wikier.org/$1 [R=303,L,QSA]
+
+ErrorDocument 404 /404.html
+
+php_value register_globals 0
+
+#XPI files
+AddType application/x-xpinstall .xpi
+
+#RDF
+AddType application/rdf+xml .rdf
+
+#Python
+AddType application/x-httpd-php-source .py
+AddHandler application/x-httpd-php-source .py
+
+#PHP
+AddType application/x-httpd-php-source .phps
+AddHandler application/x-httpd-php-source .phps
+
+<IfModule mod_headers.c>
+  Header set Access-Control-Allow-Origin "*"
+</IfModule>
